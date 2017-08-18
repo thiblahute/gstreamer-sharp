@@ -142,6 +142,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
 	<attr path="/api/namespace/object[@cname='GstAudioClock']/field[@cname='destroy_notify']" name="hidden">1</attr>
 	<attr path="/api/namespace/interface[@cname='GstStreamVolume']/property[@cname='volume']" name="hidden">1</attr>
 	<!-- Name clashes -->
+	<attr path="/api/namespace/struct[@cname='GstClock']/field[@cname='synced']" name="name">SSynced</attr>
 	<attr path="/api/namespace/struct[@cname='GstRTCPBuffer']/field[@cname='map']" name="name">MapInfo</attr>
 	<attr path="/api/namespace/struct[@cname='GstRTPBuffer']/field[@cname='map']" name="name">MapInfo</attr>
 	<!-- Namespace switches -->

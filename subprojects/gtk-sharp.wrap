@@ -1,0 +1,4 @@
+[wrap-git]
+directory=gtk-sharp
+url=https://github.com/thiblahute/gtk-sharp.git
+revision=meson

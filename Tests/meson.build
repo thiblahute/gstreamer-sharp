@@ -22,7 +22,10 @@ if nunit_console.found()
         nunit_dep = declare_dependency(link_args: get_nunit_res.stdout().split(),
             version: nunit_version)
 
-        foreach test: ['PipelineTests']
+        foreach test: [
+                # 'PipelineTests',
+                'SdpTests'
+                ]
             lib = library(test, test + '.cs', 'TestBase.cs',
                         cs_args: ['-nowarn:169', '-nowarn:108', '-nowarn:114'],
                         dependencies: [gst_sharp_dep, nunit_dep])

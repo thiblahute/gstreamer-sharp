@@ -126,6 +126,7 @@ class NugetDownloader:
             **self.__dict__)
         workdir = os.path.join(self.current_builddir,
                                self.nuget_name, self.nuget_version)
+        os.makedirs(workdir, exist_ok=True)
 
         try:
             with open(os.path.join(workdir, 'linkline'), 'r') as f:
